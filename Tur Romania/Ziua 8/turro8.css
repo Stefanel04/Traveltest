@@ -229,9 +229,8 @@ footer {
 
 @media (width < 600px){
     .container {
-        padding: 15px; /* Reducem padding-ul pentru ecranele mici */
-        padding-bottom: 100px;
-        
+        padding: 15px;
+         
     }
 
     .blog-post img {
@@ -247,36 +246,28 @@ footer {
     }
     
     .image-gallery a.back-button {
+        position: absolute;
+        left: 20%;
+        bottom:-0rem;
+        transform: translateX(-50%);
+        max-width: 90%;
+        font-size: 12px;
+        padding:5px
+        
+    }
+    
+    .image-gallery a.stravabutton {
         position: relative;
-        left: 50%;
+        left: 1%;
         transform: translateX(-50%);
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
         display:inline-block;
-    
+        bottom:-0.1rem;
+        font-size: 12px;
+        padding:5px
     }
-    
-    .image-gallery a.stravabutton {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-70%);
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display:inline-block
-    }
-    
-    .image-gallery a.nextpage {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display:inline-block
-    }
+
 }
-
-
 

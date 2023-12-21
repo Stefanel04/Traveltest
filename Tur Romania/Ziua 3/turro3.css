@@ -175,7 +175,7 @@ footer {
 
 .image-gallery a.nextpage {
     position: relative;
-    left: calc(225% - 250px);
+    left: calc(325% - 250px);
     bottom: 20px;
     color: #8b4513;
     background-color: transparent;
@@ -244,10 +244,10 @@ footer {
     }
 }
 
-@media (width < 600px){
+@media (max-width: 600px) {
     .container {
         padding: 15px; /* Reducem padding-ul pentru ecranele mici */
-        
+        padding-bottom: 60px; /* Ajustează spațiul pentru a face loc butoanelor */
     }
 
     .blog-post img {
@@ -259,41 +259,65 @@ footer {
     }
 
     .image-gallery a {
-        margin-top: 200px; /* Ajustăm marginea superioară pentru butoanele de sub imagini */
+        display: block; /* Transformăm butoanele în blocuri pentru a ocupa lățimea întreagă */
+        margin: 0 auto; /* Așezăm butoanele în centru */
+        margin-top: 0px; /* Spațiere între butoane */
+        width: 90%; /* Lățimea butoanelor */
     }
     
-    .image-gallery a.back-button {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display:inline-block;
-    
-    }
-    
-    .image-gallery a.stravabutton {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display:inline-block
-    }
-    
+    .image-gallery a.back-button,
+    .image-gallery a.stravabutton,
     .image-gallery a.nextpage {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display:inline-block
+        max-width: 100%;
+        margin-top: 10px; /* Spațiere între butoane pe dispozitivele mobile */
+    }
+    
+    .image-gallery a.back-button {
+        position: relative;
+        background-color: transparent;
+        border: 2px solid #8b4513;
+        color: #8b4513;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .image-gallery a.stravabutton {
+        position: absolute;
+        display: block;
+        background-color: transparent;
+        border: 2px solid #8b4513;
+        color: #8b4513;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: -60px;
+        
+    }
+
+    .image-gallery a.nextpage {
+        position: relative;
+        background-color: transparent;
+        border: 2px solid #8b4513;
+        color: #8b4513;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+        margin-left:-6px;
+    }
+
+    .image-gallery a:hover {
+        background-color: orangered;
+        border-color: orangered;
+        color: #fff;
     }
 }
-
 
 
 
